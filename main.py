@@ -41,10 +41,6 @@ def selecao(op):
         print("Opção inválida")
 
 
-
-
-#import functions.is_multgraph.multigraph as mtg
-
 if __name__ == "__main__":
     
     print("-------------------------")
@@ -68,25 +64,4 @@ if __name__ == "__main__":
     op = input("Selecione a opção que deseja prosseguir: ")
 
     print("\n")
-   # mtg.is_multigraph()
-    # multigrafh, pseudograph, completegraph, desconex = graph.graph_check()
-
-    # print(f"É multigrafo: {multigrafh}")
-    # print(f"É pseudografo: {pseudograph}")
-    # print(f"É desconexo: {desconex}")
-    # print(f"É grafo completo: {completegraph}")
-
-    # graus = graph.graus_vertices()
-    # print(f"Grau dos Vértices do id=1: {graus}")
-
-    # a_grau = graph.degree_vertice_input("A")
-    # print(f"Grau do Vértice A do id=1: {a_grau}")
-
-    # vertice_a = graph.reachable_vertices_of_A(1, "A")
-    # print(f"Vértices alcançavéis de A: {vertice_a}")
-    
-    # vertice_ina = graph.vertices_unreachable_of_A(1, "A")
-    # print(f"Vértices inalcançavéis de A: {vertice_ina}")
-    # print(graph.bfs_graph("A", "BV"))
-
-    # print(graph.dfs("A", "H"))
+  
