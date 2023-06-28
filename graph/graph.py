@@ -15,8 +15,10 @@ class Graph:
         for i in range(len(self.__graph)):
             mult[i + 1] = self.is_multigraph(self.__graph[i]["edges"])
             pseud[i + 1] = self.is_pseudograph(self.__graph[i]["edges"])
-            complet[i + 1] = self.is_complete_graph(self.__graph[i]["vertices"], self.__graph[i]["edges"])
-            desconex[i + 1] = self.is_disconnected_graph(self.__graph[i]["vertices"], self.__graph[i]["edges"])
+            complet[i + 1] = self.is_complete_graph(self.__graph[i]["vertices"], 
+                                                    self.__graph[i]["edges"])
+            desconex[i + 1] = self.is_disconnected_graph(self.__graph[i]["vertices"], 
+                                                         self.__graph[i]["edges"])
 
         return mult, pseud, complet, desconex
     
