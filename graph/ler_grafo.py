@@ -1,8 +1,8 @@
 import json
 
 class JsonToDict:
-    def __init__(self, input):
-        self.__input = input
+    def __init__(self, input_file):
+        self.__input = input_file
         self.__data = {}
     
     def json_to_graph(self):

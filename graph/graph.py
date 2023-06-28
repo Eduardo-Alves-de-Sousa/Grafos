@@ -13,16 +13,16 @@ class Graph:
         mult, pseud, complet, desconex = {}, {}, {}, {}
 
         for i in range(len(self.__graph)):
-            mult[i + 1] = self.is_multigraph(self.__graph[i]["edges"])
-            pseud[i + 1] = self.is_pseudograph(self.__graph[i]["edges"])
-            complet[i + 1] = self.is_complete_graph(self.__graph[i]["vertices"], 
+            mult[i + 1] = self.is_multigrafo(self.__graph[i]["edges"])
+            pseud[i + 1] = self.is_pseudografo(self.__graph[i]["edges"])
+            complet[i + 1] = self.is_grafo_completo(self.__graph[i]["vertices"], 
                                                     self.__graph[i]["edges"])
-            desconex[i + 1] = self.is_disconnected_graph(self.__graph[i]["vertices"], 
-                                                         self.__graph[i]["edges"])
+            desconex[i + 1] = self.is_grafo_desconexo(self.__graph[i]["vertices"], 
+                                                      self.__graph[i]["edges"])
 
         return mult, pseud, complet, desconex
     
-    def is_multigraph(self, edges):
+    def is_multigrafo(self, edges):
         # Criar um dicionário para armazenar as arestas
         edge_dict = defaultdict(int)
 
@@ -36,25 +36,24 @@ class Graph:
             
         return False
     
-    def is_pseudograph(self, edges):
+    def is_pseudografo(self, edges):
         for edge in edges:
             if edge[0] == edge[1]:
                 return True
             
         return False
 
-    def is_disconnected_graph(self, vertices, edges):
+    def is_grafo_desconexo(self, vertices, edges):
         calc = len(vertices) * 2
         if len(edges) * 2 < calc:
             return True
         
         return False
 
-    # verificar se o grafo é completo
-    def is_complete_graph(self, vertices, edges):
+    def is_grafo_completo(self, vertices, edges):
         calc_edge = (len(vertices) ** 2) - len(vertices)
 
-        if self.is_multigraph(edges) or self.is_pseudograph(edges):
+        if self.is_multigrafo(edges) or self.is_pseudografo(edges):
             return False
         elif calc_edge == (len(edges)) * 2 or calc_edge == ((len(edges) - 1) * 2):
             return True
@@ -148,7 +147,7 @@ class Graph:
 
         return vertex_list
 
-    def bfs_graph(self, initial, final):
+    def grafo_bfs(self, initial, final):
         json_file = gm.JsonToDict(self.__input)
         self.__graph = json_file.json_to_graph()["graphs"]
         degree = self.__graph[10]["vertices"]
