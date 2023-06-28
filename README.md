@@ -1,7 +1,8 @@
 # Grafos
 -Trabalho de criação de GRAFOS, lendo arquivo JSON
 
-##implementar uma ferramenta chamada "grafos" com intereface em linha de comando. Abaixo estão exemplo de chamadas da ferramenta:
+#Implementar uma ferramenta chamada "grafos" com intereface em linha de comando. Abaixo estão exemplo de chamadas da ferramenta:
+
 *grafos carrregar arquivo.json //deve carregar os grafos contidos no arquivo .json
 *grafos multigrafos //deve informar quais grafos do arquivo carregado são multigrafos
 *grafos pseudografos //deve informar quais grafos do arquivo carregado são pseudografos
