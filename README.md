@@ -17,7 +17,7 @@
 * grafos sair // finaliza a execução da ferramenta
 
 ### O que foi feito!!.
-- Foi criado toda construção dos graficos faltando apenas os grafos (a criação de um executavel funcional, grafos alcancaveis, grafos desconexos, grafos inalcancaveis).
+- Foi criado toda construção dos grafos faltando apenas os grafos (grafos alcancaveis, grafos desconexos, grafos inalcancaveis) e a criação de um executavel funcional.
 - Toda criação dos demais grafos está situada na pasta "graphs".
 - Criação de uma classe principal chamada "main.py" onde contém todos os importes dos grafos feitos, a leitura do arquivo .JSON, apresenta também os comandos para percorrer o arquivo JSON (desde o carregar arquivo.json, até o comando "sair")fazendo as buscas dos devidos grafos solicitados, inclusive apresenta uma função "main" para verificação do JSON.
-- 
+- Criação de um arquivo grafos.py onde contem a verificação dos grafos.
