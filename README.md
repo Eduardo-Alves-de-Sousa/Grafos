@@ -15,3 +15,5 @@
 * grafos bfs partida="A" chegada="B" //deve informar o caminho partindo do vértice = A até chegar no *vértice=B usando o algoritmo BFS.
 * grafos dfs partida="A" chegada="B" //deve informar o caminho partindo do vértice = A até chegar no *vértice=B usando o algoritmo DFS.
 * grafos sair // finaliza a execução da ferramenta
+
+### O que foi feito.
