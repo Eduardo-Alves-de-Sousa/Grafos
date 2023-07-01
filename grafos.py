@@ -25,14 +25,6 @@ class Grafos:
             print("Existem pseudografos")
         else:
             print("Não existem pseudografos")
-    #Verifica se há grafos desconectados na lista de grafos
-    '''def possui_grafos_desconectados(self):
-        for i, grafo in enumerate(self.grafos):
-            vertices = grafo['vertices']
-            arestas = grafo['arestas']
-            if not self.e_conectado(vertices, arestas):
-                print(f"O grafo {i} está desconectado")'''
-    #Verifica se há grafos completos na lista de grafos.
     def possui_grafos_completos(self):
         for i, grafo in enumerate(self.grafos):
             vertices = grafo['vertices']
