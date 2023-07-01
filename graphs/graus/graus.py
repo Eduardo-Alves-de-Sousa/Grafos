@@ -1,9 +1,6 @@
 def graus(graphs, graph_id):
-    #found_graph = False
-
     for graph in graphs:
         if graph['id'] == graph_id:
-            #found_graph = True
             vertices = graph['vertices']
             edges = graph['edges']
             degrees = {vertex: 0 for vertex in vertices}

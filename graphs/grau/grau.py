@@ -1,9 +1,6 @@
 def grau(graphs, graph_id, vertex):
-    #found_graph = False
-
     for graph in graphs:
         if graph['id'] == graph_id:
-            #found_graph = True
             edges = graph['edges']
             degree = 0
 
@@ -13,5 +10,4 @@ def grau(graphs, graph_id, vertex):
 
             print("O grau do vértice", vertex, "no grafo", graph_id, "é", degree)
             return
-
     print("Desculpe! O grafo não foi encontrado:", graph_id)
