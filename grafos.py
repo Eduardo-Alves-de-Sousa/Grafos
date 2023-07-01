@@ -111,7 +111,7 @@ class Grafos:
             print("Comando inválido")
 #Cria uma instância da classe Grafos e inicia um loop para receber 
 #os comandos de analise do grafo desejado. Comando é passado para o 
-#método executar_comando para ser processado.
+#método executar_comando para ser processado
 def main():
     grafos = Grafos()
     while True:
