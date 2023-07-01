@@ -1,4 +1,4 @@
-# Grafos
+# Trabalho avaliativo de Grafos
 -Trabalho de criação de GRAFOS, lendo arquivo JSON
 
 ## Implementar uma ferramenta chamada "grafos" com intereface em linha de comando. Abaixo estão exemplo de chamadas da ferramenta:
